@@ -4,7 +4,7 @@
 start:
 	npx vite
 
-build:
+build: generate
 	npx vite build
 
 preview:

@@ -1,7 +1,7 @@
 .PHONY := generate, start, build, preview, generate_1000, generate_10000, generate_100000, generate_1000000, install
 .DEFAULT:=start
 
-start:
+start: generate
 	npx vite
 
 install:

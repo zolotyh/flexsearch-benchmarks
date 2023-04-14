@@ -3,9 +3,9 @@ import { demo1, randomWordsDemo } from './demo';
 import { formatResult } from './src/formatResult.js';
 
 document.querySelector('#app').innerHTML = `
-  <h1>Результаты</h1>
+  <h1>Results</h1>
   <hr>
-  <button id="button">Генерировать</button>
+  <button id="button">Generate</button>
   <hr>
   <div id="result">
   </div>

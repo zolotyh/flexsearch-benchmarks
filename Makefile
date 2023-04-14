@@ -1,10 +1,13 @@
-.PHONY := generate, start, build, preview, generate_1000, generate_10000, generate_100000, generate_1000000
+.PHONY := generate, start, build, preview, generate_1000, generate_10000, generate_100000, generate_1000000, install
 .DEFAULT:=start
 
 start:
 	npx vite
 
-build: generate
+install:
+	npm ci
+
+build: install generate
 	npx vite build
 
 preview:

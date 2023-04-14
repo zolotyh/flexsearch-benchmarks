@@ -1,0 +1,25 @@
+{
+  "name": "search-performance-tests",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate": "npm run generate1000 && npm run generate10000 && npm run generate100000 && npm run generate1000000",
+    "generate1000": "./scripts/generate.js",
+    "generate10000": "WORDS_NUMBER=10000 ./scripts/generate.js",
+    "generate100000": "WORDS_NUMBER=100000 ./scripts/generate.js",
+    "generate1000000": "WORDS_NUMBER=1000000 ./scripts/generate.js"
+  },
+  "devDependencies": {
+    "@ngneat/falso": "^6.4.0",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "flexsearch": "^0.7.31",
+    "pretty-ms": "^8.0.0",
+    "water.css": "^2.1.1"
+  }
+}
